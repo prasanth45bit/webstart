@@ -4,11 +4,7 @@ const {
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
+   
     static associate(models) {
       // define association here
     }
@@ -18,10 +14,12 @@ module.exports = (sequelize, DataTypes) => {
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
-      primaryKey: true, // ✅ Marking 'id' as the primary key
+      primaryKey: true, 
     },
     email: DataTypes.STRING,
-    phone_number: DataTypes.NUMBER
+    password:DataTypes.STRING,
+    phone_number: DataTypes.NUMBER,
+    profile: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'User',

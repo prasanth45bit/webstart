@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "PMTP@4273",
-    "database": "TESTING",
+    "database": "WEBSTART",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
